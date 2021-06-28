@@ -1,4 +1,4 @@
-package main.java.com.yjworld.docmng;
+package com.yjworld.docmng;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import static main.java.com.yjworld.docmng.Attributes.*;
+import static com.yjworld.docmng.Attributes.*;
 
 class ImageImporter implements Importer {
 

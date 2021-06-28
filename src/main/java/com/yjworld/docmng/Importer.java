@@ -1,4 +1,4 @@
-package main.java.com.yjworld.docmng;
+package com.yjworld.docmng;
 
 import java.io.File;
 import java.io.IOException;

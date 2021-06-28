@@ -1,4 +1,4 @@
-package main.java.com.yjworld.docmng;
+package com.yjworld.docmng;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.function.Predicate;
 
 import static java.util.stream.Collectors.toList;
-import static main.java.com.yjworld.docmng.Attributes.*;
+import static com.yjworld.docmng.Attributes.*;
 
 class TextFile {
     private final Map<String, String> attributes;

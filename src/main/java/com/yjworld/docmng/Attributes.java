@@ -1,4 +1,4 @@
-package main.java.com.yjworld.docmng;
+package com.yjworld.docmng;
 
 public final class Attributes {
 	public static final String PATH = "path";
