@@ -21,6 +21,10 @@ class TextFile {
 		lines = Files.lines(file.toPath()).collect(toList());
 	}
 
+	Map<String, String> getAttributes() {
+		return attributes;
+	}
+
 	int addLines(
 			final int start,
 			final Predicate<String> isEnd,
@@ -40,4 +44,14 @@ class TextFile {
 		attributes.put(attributeName, accumulator.toString().trim());
 		return lineNumber;
 	}
+
+	void addLineSuffix(final String prefix, final String attributeName) {
+		for (final String line : lines) {
+			if (line.startsWith(prefix)) {
+				attributes.put(attributeName, line.substring(prefix.length()));
+				break;
+			}
+		}
+	}
+
 }
